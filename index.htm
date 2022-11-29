@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&amp;display=fallback">
+
+<head>
+	<title>
+		HTML Dev Portfolio
+	</title>
+	
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1">
+		
+	<style>
+        
+	
+		/* wildcard styling */
+		* {
+			box-sizing: border-box;
+
+        }
+		/* padding for whole body */
+		body {
+			padding: 15px;
+            background: #0F2027;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #2C5364, #2f515e, #2C5364);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #2C5364, #2f515e, #2C5364); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		}
+		
+		/* styling body */
+		.container {
+			max-width: 1200px;
+			margin: auto;
+		}
+		
+		h2 {
+			color: #4c9fb4;
+		}
+        h3 {
+            color: #4c9fb4;
+        }
+        hr {
+            border-color:#1b515f
+        }
+		h1 {
+            color: #4c9fb4
+        }
+		/* anchor tag decoration */
+		a {
+			text-decoration: none;
+			color: #4c9fb4;
+		}
+		
+		a:hover {
+			color: blue;
+		}
+		
+		/* paragraph tag decoration */
+		p {
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 4;
+			overflow: hidden;
+	
+		}
+		
+		/* row and column decoration */
+		.row {
+			margin: 0px -18px;
+			padding: 8px;
+		}
+		
+		.row > .column {
+			padding: 6px;
+		}
+		
+		.column {
+			float: left;
+			width: 25%;
+		}
+		
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+		
+		/* content decoration */
+		.content {
+            background: #000000;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+			padding: 10px;
+            color:gray;
+			border: 1px solid gray;
+            border-radius:10px;
+		}
+		
+		/* window size 850 width set */
+		@media screen and (max-width: 850px) {
+			.column {
+				width: 50%;
+			}
+		}
+	
+		/* window size 400 width set */
+		@media screen and (max-width: 400px) {
+			.column {
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	
+	<!-- title and tag -->
+	<div class="container">
+        <font face="Source Sans Pro" size="5">
+		<h1>Vlad Zubialevich</h1>
+		<h3>Computer Science Student</h3>
+		<hr>
+  
+
+		<!-- Content of the body-->
+		<h2>HTML Development Portfolio</h2>
+    </font>
+		<div class="row">
+			<div class="column">
+				<div class="content">
+					<img src=
+"nodejsdoc.PNG"
+						alt="" style="width:100%">
+					<h3>
+						<a href="#">Technical Documentation</a>
+					</h3>
+					
+
+
+
+<p>
+						This project showcased technical
+                        documentation, in this case for 
+                        Node.JS. It features images, fonts,
+                        various colors, code snippets, 
+                        backgrounds and more!</p>
+				</div>
+			</div>
+			
+			<div class="column">
+				<div class="content">
+					<img src=
+"restaurant page.PNG"
+						alt="" style="width:100%">
+					<h3>
+						<a href="#">Restaurant Page</a>
+					</h3>
+					
+					
+
+
+
+<p>
+						This project is a restaurant
+                        page which features images, 
+                        links, PDF documents, various
+                        backgrounds, and other elements
+                        you would find on a similar site.  
+					</p>
+
+
+
+
+				</div>
+			</div>
+			
+			<div class="column">
+				<div class="content">
+					<img src=
+"photography page.PNG"
+						alt="" style="width:100%">
+					<h3>
+						<a href="#">Photography Page</a>
+					</h3>
+					
+					
+
+
+
+<p>
+						This page is a photography Page
+                        designed to be highly responsive
+                        and scalable to new images and 
+                        to display them neatly on the page.
+                        It features web hosted and locally
+                        hosted images as a backup.
+					</p>
+
+
+
+
+				</div>
+			</div>
+			
+			<div class="column">
+				<div class="content">
+					<img src=
+"simple portfolio.PNG"
+						alt="" style="width:100%">
+					<h3>
+						<a href="#">Simple Portfolio</a>
+					</h3>
+					
+					
+
+
+
+<p>
+						This project is a simple portfolio,
+                        designed to be a stepping stone for
+                        creating a portfolio website page. It
+                        features images, links, a header with
+                        functioning buttons and more!
+					</p>
+
+
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>		
