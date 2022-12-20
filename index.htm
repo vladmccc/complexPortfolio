@@ -1,602 +1,704 @@
 <!DOCTYPE html>
 <html>
-   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&amp;display=fallback">
-   <head>
-      <title>
-         HTML Dev Portfolio
-      </title>
-      <meta name="viewport"
-         content="width=device-width, initial-scale=1">
-      <style>
-         /* wildcard styling */
-         * {
-         box-sizing: border-box;
-         }
-         /* padding for whole body */
-         body {
-         padding: 15px;
-         background: #0F2027;  /* fallback for old browsers */
-         background: -webkit-linear-gradient(to right, #2C5364, #2f515e, #2C5364);  /* Chrome 10-25, Safari 5.1-6 */
-         background: linear-gradient(to right, #2C5364, #2f515e, #2C5364); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-         }
-         * {box-sizing: border-box}
-         body {font-family: Verdana, sans-serif; margin:0}
-         .mySlides {display: none}
-         img {vertical-align: middle;}
-         /* Slideshow container */
-         .slideshow-container {
-         max-width: 1000px;
-         position: relative;
-         margin: auto;
-         }
-         /* Next & previous buttons */
-         .prev, .next {
-         cursor: pointer;
-         position: relative;
-         top: 50%;
-         width: auto;
-         padding: 16px;
-         margin-top: -22px;
-         color: white;
-         font-weight: bold;
-         font-size: 18px;
-         transition: 0.6s ease;
-         border-radius: 0 3px 3px 0;
-         user-select: none;
-         }
-         /* Position the "next button" to the right */
-         .next {
-         right: 0;
-         border-radius: 3px 0 0 3px;
-         }
-         /* On hover, add a black background color with a little bit see-through */
-         .prev:hover, .next:hover {
-         background-color: rgba(0,0,0,0.8);
-         }
-         /* Caption text */
-         .text {
-         color: #f2f2f2;
-         font-size: 30px;
-         padding: 8px 12px;
-         position: absolute;
-         bottom: 40px;
-         width: 100%;
-         text-align: center;
-         }
-         /* Number text (1/3 etc) */
-         .numbertext {
-         color: #f2f2f2;
-         font-size: 20px;
-         padding: 8px 12px;
-         position: absolute;
-         top: 0;
-         }
-         /* The dots/bullets/indicators */
-         .dot {
-         cursor: pointer;
-         height: 15px;
-         width: 15px;
-         margin: 0 2px;
-         background-color: #bbb;
-         border-radius: 50%;
-         display: inline-block;
-         transition: background-color 0.6s ease;
-         }
-         .active, .dot:hover {
-         background-color: #717171;
-         }
-         /* Fading animation */
-         .fade {
-         animation-name: fade;
-         animation-duration: 1.5s;
-         }
-         @keyframes fade {
-         from {opacity: .4} 
-         to {opacity: 1}
-         }
-         /* On smaller screens, decrease text size */
-         @media only screen and (max-width: 300px) {
-         .prev, .next,.text {font-size: 15px}
-         }
-         h2 {
-         color: #4c9fb4;
-         }
-         h3 {
-         color: #4c9fb4;
-         font-family: "Source Sans Pro";
-         }
-         hr {
-         border-color:#1b515f
-         }
-         h1 {
-         color: #4c9fb4
-         }
-         table {
-         border-radius:15px;
-         }
-         /* anchor tag decoration */
-         a {
-         size: 5px;
-         text-decoration: none;
-         color: #4c9fb4;
-         }
-         td {
-         font-family: "Source Sans Pro";
-         }
-         img{
-         border-radius:10px;
-         }
-         a:hover {
-         color: white;
-         }
-         /* paragraph tag decoration */
-         p {
-         display: -webkit-box;
-         -webkit-box-orient: vertical;
-         -webkit-line-clamp: 4;
-         overflow: hidden;
-         }
-         /* row and column decoration */
-         .row {
-         margin: 0px -18px;
-         padding: 8px;
-         }
-         .row > .column {
-         padding: 6px;
-         }
-         .column {
-         float: left;
-         width: 25%;
-         }
-         .row:after {
-         content: "";
-         display: table;
-         clear: both;
-         }
-         /* content decoration */
-         .content {
-         background: #000000;  /* fallback for old browsers */
-         background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-         background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-         padding: 10px;
-         color:gray;
-         border: 1px solid gray;
-         border-radius:10px;
-         }
-         /* window size 850 width set */
-         @media screen and (max-width: 850px) {
-         .column {
-         width: 50%;
-         }
-         }
-         /* window size 400 width set */
-         @media screen and (max-width: 400px) {
-         .column {
-         width: 100%;
-         }
-         }
-      </style>
-   </head>
-   <!--Footer1(start)-->
-   <table id="footer" border="0" width="100%"
-      cellpadding="0" cellspacing="0">
-      <tr>
-         <td>
-            <table border="0" cellpadding="15"
-               cellspacing="0" width="95%" align="center" size="5">
-               <tr>
-                  <td width="15%" valign="top">
-                     <font face="Verdana" size="5" color="#3b7c8c">
-                     <a href="" style="text-decoration:none" color="FFFFFF">
-                     <b>Vlad Zubialevich</b>
-                     </a>
-                     </font>
-                  </td>
-                  <td>
-                  </td>
-                  <td width="15%" valign="top">
-                     <font face="Verdana" size="5" color="#3b7c8c">
-                     <a href="#home" style="text-decoration:none" color="FFFFFF">
-                     <b>Home</b>
-                     </a>
-                  </td>
-                  </font>
-                  <td>
-                  </td>
-                  <td width="15%" valign="top">
-                     <font face="Verdana" size="5" color="#3b7c8c">
-                     <a href="#about" style="text-decoration:none" color="FFFFFF">
-                     <b>About</b>
-                     </a>
-                  </td>
-                  </font>
-                  <td>
-                  </td>
-                  <td width="15%" valign="top">
-                     <font face="Verdana" size="5" color="#3b7c8c">
-                     <a href="#projects" style="text-decoration:none" color="FFFFFF">
-                     <b>Projects</b>
-                     </a>
-                     </font>
-                  </td>
-                  <td>
-                  </td>
-                  <td width="15%" valign="top">
-                     <font face="Verdana" size="5" color="#3b7c8c">
-                     <a href="#achievements" style="text-decoration:none" color="FFFFFF">
-                     <b>Achievements</b>
-                     </a>
-                     </font>
-                  </td>
-                  <td>
-                  </td>
-                  <td width="15%" valign="top">
-                     <font face="Verdana" size="5" color="#3b7c8c">
-                     <a href="#footer" style="text-decoration:none" color="FFFFFF">
-                     <b>Contact</b>
-                     </font>
-                     </a>
-                  </td>
-               </tr>
-            </table>
-         </td>
-      </tr>
-      </font>
-   </table>
-   <body>
-      <!--Header(end)-->
-      <br>
-      <br>
-      <br>
-      <br>
-      <!--About(start)-->
-      <table id="about" border="0" width="100%"
-         cellpadding="0" cellspacing="0" >
-         <tr>
-            <td>
-               <table border="0" cellpadding="15"
-                  cellspacing="0" width="80%" align="center">
-                  <tr>
-                     <td height="180" align="center"
-                        valign="middle" colspan="2">
-                        <font face="Verdana" size="8"
-                           color="#4c9fb4">
-                           About Me
-                           <hr color="#4c9fb4" width="90">
-                        </font>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td width="40%">
-                        <img src="https://media-exp1.licdn.com/dms/image/C5603AQH9z3kcy26GFg/profile-displayphoto-shrink_800_800/0/1652826172160?e=2147483647&v=beta&t=JCEJfInwHe1Jp3yFPXvkAedhjt4AA_BNXh96P_vXdYg">
-                     </td>
-                     <td width="60%">
-                        <font face="Verdana" size="5"
-                           color="FFFFFF">
-                        Hello, My name is Vlad Zubialevich. 
-                        Welcome to my online portfolio.
-                        <br>
-                        <br>
-                        I currently work at a local MSP and I am  
-                        also a full time Computer Science student 
-                        at Mercer County Community College.
-                        <br>
-                        <br>
-                        In my free time I like to buy and resell 
-                        sneakers and streetwear and code. I mainly
-                        code in Node.JS, HTML, JS, GO and CSS.
-                        <br>
-                        Thank you for reading this,
-                        <br>
-                        <br>
-                        <b>Vlad Zubialevich.</b>
-                        </font>
-                     </td>
-                  </tr>
-               </table>
-               <br>
-               <br>
-               <br>
-            </td>
-         </tr>
-      </table>
-      <!--About(end)-->
-      <!--Projects(start)-->
-      <table id="projects" border="0" width="100%"
-         cellpadding="0" cellspacing="0" bgcolor="#b3b3b3">
-         <tr>
-            <td>
-            <td height="180" align="center"
-               valign="middle" colspan="2">
-               <font face="Verdana" size="8"
-                  color="181818">
-               <br>
-               Projects
-               <br>
-               </font>
-               <hr color="181818" width="90">
-               <br>
-               <br>
-               <br>
-               <table border="0" cellpadding="15"
-                  cellspacing="0" width="80%" align="center">
-                  <tr>
-                     </td>
-                  </tr>
-                  <!-- title and tag -->
-                  <div class="slideshow-container">
-                     <br>
-                     <br>
-                     <div class="mySlides fade">
-                        <div class="numbertext">1 / 6</div>
-                        <a href="https://vladmccc.github.io/technicalDocumentation/"><img src="nodejsdoc.PNG" style="width:100%"></a></a>
-                        <br>
-                        <br>
-                        <div class="text">Node.JS Technical Doc</div>
-                     </div>
-                     <div class="mySlides fade">
-                        <div class="numbertext">2 / 6</div>
-                        <a href="https://vladmccc.github.io/simplePortfolio/"><img src="simple portfolio.PNG" style="width:100%"></a>
-                        <br>
-                        <br>
-                        <div class="text">Simple Portfolio</div>
-                     </div>
-                     <div class="mySlides fade">
-                        <div class="numbertext">3 / 6</div>
-                        <a href="https://vladmccc.github.io/restaurantPage/"><img src="restaurant page.PNG" style="width:100%"></a>
-                        <br>
-                        <br>
-                        <div class="text">Restaurant Page</div>
-                     </div>
-                     <div class="mySlides fade">
-                        <div class="numbertext">4 / 6</div>
-                        <a href="https://vladmccc.github.io/musicStore/"><img src="musicStore.PNG" style="width:100%"></a>
-                        <br>
-                        <br>
-                        <div class="text">Music Store</div>
-                     </div>
-                     <div class="mySlides fade">
-                        <div class="numbertext">5 / 6</div>
-                        <a href="https://vladmccc.github.io/photographyPage/"><img src="photography page.PNG" style="width:100%"></a>
-                        <br>
-                        <br>
-                        <div class="text">Photography Page</div>
-                     </div>
-                     <div class="mySlides fade">
-                        <div class="numbertext">6 / 6</div>
-                        <a href="https://vladmccc.github.io/michealJordan/"><img src="michealJordan.png" style="width:100%"></a>
-                        <br>
-                        <br>
-                        <div class="text">Tribute Page</div>
-                     </div>
-                     <br>
-                     <br>
-                     <br>
-                     <a class="prev" onclick="plusSlides(-1)">❮</a>
-                     <a class="next" onclick="plusSlides(1)">❯</a>
-                  </div>
-                  <br>
-                  <br>
-                  <div style="text-align:center">
-                     <span class="dot" onclick="currentSlide(1)"></span> 
-                     <span class="dot" onclick="currentSlide(2)"></span> 
-                     <span class="dot" onclick="currentSlide(3)"></span> 
-                     <span class="dot" onclick="currentSlide(4)"></span> 
-                     <span class="dot" onclick="currentSlide(5)"></span> 
-                     <span class="dot" onclick="currentSlide(6)"></span> 
-                  </div>
-                  <script>
-                     let slideIndex = 1;
-                     showSlides(slideIndex);
-                     
-                     function plusSlides(n) {
-                       showSlides(slideIndex += n);
-                     }
-                     
-                     function currentSlide(n) {
-                       showSlides(slideIndex = n);
-                     }
-                     
-                     function showSlides(n) {
-                       let i;
-                       let slides = document.getElementsByClassName("mySlides");
-                       let dots = document.getElementsByClassName("dot");
-                       if (n > slides.length) {slideIndex = 1}    
-                       if (n < 1) {slideIndex = slides.length}
-                       for (i = 0; i < slides.length; i++) {
-                     	slides[i].style.display = "none";  
-                       }
-                       for (i = 0; i < dots.length; i++) {
-                     	dots[i].className = dots[i].className.replace(" active", "");
-                       }
-                       slides[slideIndex-1].style.display = "block";  
-                       dots[slideIndex-1].className += " active";
-                     }
-                  </script>
-                  </div>
-                  </div>
-                  </div>
-                  </div>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  </font>
-                  </td>
-                  </tr>
-               </table>
-            </td>
-         </tr>
-      </table>
-      <!--Projects(end)-->
-      <!--Achievement(start)-->
-      <table id="achievements" border="0" width="100%"
-         cellpadding="0" cellspacing="0" >
-         <tr>
-            <td>
-               <table border="0" cellpadding="15"
-                  cellspacing="0" width="80%" align="center">
-                  <tr>
-                     <td height="180" align="center" valign="middle">
-                        <font face="Verdana" size="8" color="#4c9fb4">
-                           Achievements
-                           <hr color="#4c9fb4" width="100">
-                        </font>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <font face="Verdana" size="4" color="FFFFFF">
-                           <ul>
-                              <b>Field IT Specialist</b>
-                              <ul>
-                                 <li>
-                                    May, 2022 - Present.
-                                 </li>
-                                 <li>
-                                    Employed at a local MSP as a
-                                    Field IT Specialist.
-                                 </li>
-                              </ul>
-                              </li>
-                              <br>
-                              <br>
-                              <br>
-                              <b>Computer Refurbishing, Repair & Sales</b>
-                              <ul>
-                                 <li>
-                                    September, 2015 - December 2019.
-                                 </li>
-                                 <li>
-                                    Conducted computer repair and sales
-                                    for the Boys and Girls Club of Mercer
-                                    County as well as for the general public.
-                                 </li>
-                              </ul>
-                              </li>
-                              <br>
-                              <br>
-                              <br>
-                              <b>High School Graduate</b>
-                              <ul>
-                                 <li>
-                                    June, 2021.
-                                 </li>
-                                 <li>
-                                    Graduated from Lawrence High School 
-                                    as an honors student.
-                                 </li>
-                                 <br>
-                                 <br>
-                                 <br>
-                                 <br>
-                                 <br>
-                              </ul>
-                              </li>
-                           </ul>
-                        </font>
-                     </td>
-                  </tr>
-               </table>
-            </td>
-         </tr>
-      </table>
-      <!--Achievement(end)-->
-      <!--Footer1(start)-->
-      <table id="footer" border="0" width="100%"
-         cellpadding="0" cellspacing="0" bgcolor="#b3b3b3" color="FFFFFF">
-         <tr>
-            <td>
-               <table border="0" cellpadding="15"
-                  cellspacing="0" width="90%" align="center" size="5">
-                  <tr>
-                     <td width="13%" valign="top">
-                        <font face="Verdana" size="4" color="#3b7c8c">
-                        <a href="https://vladzubialevich.com" style="text-decoration:none" color="FFFFFF">
-                        <b>LinkedIn</b>
-                        </a>
-                        </font>
-                     </td>
-                     <td>
-                     </td>
-                     <td width="13%" valign="top">
-                        <font face="Verdana" size="4" color="#3b7c8c">
-                        <a href="https://vladzubialevich.com" style="text-decoration:none" color="FFFFFF">
-                        <b>GitHub</b>
-                        </a>
-                        </font>
-                     </td>
-                     <td>
-                     </td>
-                     <td width="13%" valign="top">
-                        <font face="Verdana" size="4" color="#3b7c8c">
-                        <a href="https://vladzubialevich.com" style="text-decoration:none" color="FFFFFF">
-                        <b>Twitter</b>
-                        </a>
-                        </font>
-                     </td>
-                     <td>
-                     </td>
-                     <td width="13%" valign="top">
-                        <font face="Verdana" size="4" color="#3b7c8c">
-                        <a href="https://vladzubialevich.com" style="text-decoration:none" color="FFFFFF">
-                        <b>Instagram</b>
-                        </a>
-                        </font>
-                     </td>
-                     <td>
-                     </td>
-                     <td width="13%" valign="top">
-                        <font face="Verdana" size="4" color="#3b7c8c">
-                        <a href="https://vladzubialevich.com" style="text-decoration:none" color="FFFFFF">
-                        <b>Email</b>
-                        </a>
-                        </font>
-                     </td>
-                     <td>
-                     </td>
-                     <td width="13%" valign="top">
-                        <font face="Verdana" size="4" color="#3b7c8c">
-                        <a href="https://vladzubialevich.com" style="text-decoration:none" color="FFFFFF">
-                        <b>Website</b>
-                        </a>
-                        </font>
-                     </td>
-                  </tr>
-               </table>
-            </td>
-         </tr>
-      </table>
-      <!--Footer1(end)-->
-      <!--Footer2(start)-->
-      <table id="footer" border="0" width="100%"
-         cellpadding="0" cellspacing="0" >
-         <tr>
-            <td>
-               <table border="0" cellpadding="15"
-                  cellspacing="0" width="90%" align="center">
-                  <tr>
-                     <td width="80%" valign="top">
-                        <font face="Verdana"
-                           color="#FFFFFF" size="6">
-                        <br>
-                        ©Copyright 2022 by Vlad Zubialevich.
-                        All rights reserved.
-                        </font>
-                     </td>
-                     <td width="10%">
-                        <font face="arial" color="FFFFFF" size="6">
-                        <a href="#header" style="text-decoration:none">
-                        <font face="Verdana" color="#b3b3b3" size="6">
-                        <b>TOP</b>
-                        </font>
-                        </a>
-                        </font>
-                     </td>
-                  </tr>
-               </table>
-            </td>
-         </tr>
-      </table>
-      <!--Footer2(end)-->
-</html>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&amp;display=fallback">
+
+<head>
+	<title>
+		HTML Dev Portfolio
+	</title>
+	
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1">
+		
+	<style>
+        
+	
+		/* wildcard styling */
+		* {
+			box-sizing: border-box;
+
+        }
+		/* padding for whole body */
+		body {
+			padding: 15px;
+            background: #0F2027;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #2C5364, #2f515e, #2C5364);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #2C5364, #2f515e, #2C5364); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		}
+		* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: relative;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 15px}
+}
+		
+		h2 {
+			color: #4c9fb4;
+		}
+        h3 {
+            color: #4c9fb4;
+            font-family: "Source Sans Pro";
+
+        }
+        hr {
+            border-color:#1b515f
+        }
+		h1 {
+            color: #4c9fb4
+        }
+        table {
+            border-radius:15px;
+        }
+		/* anchor tag decoration */
+		a {
+			size: 5px;
+			text-decoration: none;
+			color: #4c9fb4;
+		}
+
+        td {
+            font-family: "Source Sans Pro";
+
+        }
+        img{
+            border-radius:10px;
+        }
+		
+		a:hover {
+			color: white;
+		}
+		
+		/* paragraph tag decoration */
+		p {
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 4;
+			overflow: hidden;
+	
+		}
+		
+		/* row and column decoration */
+		.row {
+			margin: 0px -18px;
+			padding: 8px;
+		}
+		
+		.row > .column {
+			padding: 6px;
+		}
+		
+		.column {
+			float: left;
+			width: 25%;
+		}
+		
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+		
+		/* content decoration */
+		.content {
+            background: #000000;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+			padding: 10px;
+            color:gray;
+			border: 1px solid gray;
+            border-radius:10px;
+		}
+		
+		/* window size 850 width set */
+		@media screen and (max-width: 850px) {
+			.column {
+				width: 50%;
+			}
+		}
+	
+		/* window size 400 width set */
+		@media screen and (max-width: 400px) {
+			.column {
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+
+	<!--Footer1(start)-->
+	<table id="footer" border="0" width="100%"
+		cellpadding="0" cellspacing="0">
+		<tr>
+			<td>
+				<table border="0" cellpadding="15"
+					cellspacing="0" width="95%" align="center" size="5">
+					<tr>
+						<td width="25%" valign="top">
+							<font face="Verdana" size="5" color="#3b7c8c">
+								<a href="" style="text-decoration:none" color="FFFFFF">
+
+						<b>Vlad Zubialevich</b>
+						</a>
+						</font>
+						</td>
+
+						<td>
+							
+						</td>
+
+						<td width="14%" valign="top">
+							<font face="Verdana" size="5" color="#3b7c8c">
+							<a href="#home" style="text-decoration:none" color="FFFFFF">
+								<b>Home</b>
+							</a>
+						</td>
+					</font>
+						<td>
+							
+						</td>
+
+						<td width="14%" valign="top">
+							<font face="Verdana" size="5" color="#3b7c8c">
+							<a href="#about" style="text-decoration:none" color="FFFFFF">
+								<b>About</b>
+							</a>
+						</td>
+					</font>
+
+						<td>
+							
+						</td>
+
+						<td width="14%" valign="top">
+							<font face="Verdana" size="5" color="#3b7c8c">
+							<a href="#projects" style="text-decoration:none" color="FFFFFF">
+								<b>Projects</b>
+							</a>
+						</font>
+						</td>
+
+						<td>
+							
+						</td>
+
+						<td width="14%" valign="top">
+							<font face="Verdana" size="5" color="#3b7c8c">
+							<a href="#achievements" style="text-decoration:none" color="FFFFFF">
+								<b>Achievements</b>
+							</a>
+						</font>
+						</td>
+
+						<td>
+							
+						</td>
+
+						<td width="14%" valign="top">
+							<font face="Verdana" size="5" color="#3b7c8c">
+							<a href="#footer" style="text-decoration:none" color="FFFFFF">
+								<b>Contact</b>
+							</font>
+							</a>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</font>
+	</table>
+<body>
+<!--Header(end)-->
+	
+	
+
+
+
+<br>
+<br>
+<br>
+<br>
+	<!--About(start)-->
+	<table id="about" border="0" width="100%"
+		cellpadding="0" cellspacing="0" >
+		<tr>
+			<td>
+				<table border="0" cellpadding="15"
+					cellspacing="0" width="80%" align="center">
+					<tr>
+						<td height="180" align="center"
+							valign="middle" colspan="2">
+							<font face="Verdana" size="8"
+								color="#4c9fb4">
+								About Me
+                                <hr color="#4c9fb4" width="90">
+							</font>
+						</td>
+					</tr>
+                    
+
+					<tr>
+						<td width="40%">
+							<img src="https://media-exp1.licdn.com/dms/image/C5603AQH9z3kcy26GFg/profile-displayphoto-shrink_800_800/0/1652826172160?e=2147483647&v=beta&t=JCEJfInwHe1Jp3yFPXvkAedhjt4AA_BNXh96P_vXdYg">
+						</td>
+
+						<td width="60%">
+							<font face="Verdana" size="5"
+								color="FFFFFF">
+								Hello, My name is Vlad Zubialevich. 
+                                Welcome to my online portfolio.
+								<br>
+								<br>
+                                I currently work at a local MSP and I am  
+                                also a full time Computer Science student 
+                                at Mercer County Community College.
+							
+								<br>
+<br>
+								In my free time I like to buy and resell 
+                                sneakers and streetwear and code. I mainly
+                                code in Node.JS, HTML, JS, GO and CSS.
+
+								<br>
+								Thank you for reading this,
+								<br>
+								<br>
+								<b>Vlad Zubialevich.</b>
+							</font>
+						</td>
+					</tr>
+				</table>
+				<br>
+				<br>
+				<br>
+			</td>
+		</tr>
+	</table>
+	<!--About(end)-->
+
+
+	<!--Projects(start)-->
+	<table id="projects" border="0" width="100%"
+		cellpadding="0" cellspacing="0" bgcolor="#b3b3b3">
+		<tr>
+			<td>
+                <td height="180" align="center"
+							valign="middle" colspan="2">
+							<font face="Verdana" size="8"
+								color="181818">
+                                <br>
+								Projects
+                                <br>
+							</font>
+							<hr color="181818" width="90">
+							<br>
+							<br>
+							<br>
+				<table border="0" cellpadding="15"
+					cellspacing="0" width="80%" align="center">
+					<tr>
+                    </td>
+					</tr>
+<!-- title and tag -->
+<div class="slideshow-container">
+	<br>
+	  <br>
+	<div class="mySlides fade">
+	  <div class="numbertext">1 / 6</div>
+	  <a href="https://vladmccc.github.io/technicalDocumentation/"><img src="nodejsdoc.PNG" style="width:100%"></a></a>
+	  <br>
+	  <br>
+	  <div class="text">Node.JS Technical Doc</div>
+	  
+	</div>
+	
+	<div class="mySlides fade">
+	  <div class="numbertext">2 / 6</div>
+	  <a href="https://vladmccc.github.io/simplePortfolio/"><img src="simple portfolio.PNG" style="width:100%"></a>
+	  <br>
+	  <br>
+	  <div class="text">Simple Portfolio</div>
+	</div>
+	
+	<div class="mySlides fade">
+	  <div class="numbertext">3 / 6</div>
+	  <a href="https://vladmccc.github.io/restaurantPage/"><img src="restaurant page.PNG" style="width:100%"></a>
+	  <br>
+	  <br>
+	  <div class="text">Restaurant Page</div>
+	</div>
+	<div class="mySlides fade">
+		<div class="numbertext">4 / 6</div>
+		<a href="https://vladmccc.github.io/musicStore/"><img src="musicStore.PNG" style="width:100%"></a>
+		<br>
+	  <br>
+		<div class="text">Music Store</div>
+	  </div>
+	  <div class="mySlides fade">
+		<div class="numbertext">5 / 6</div>
+		<a href="https://vladmccc.github.io/photographyPage/"><img src="photography page.PNG" style="width:100%"></a>
+		<br>
+	  <br>
+		<div class="text">Photography Page</div>
+	  </div>
+	
+	  <div class="mySlides fade">
+		<div class="numbertext">6 / 6</div>
+		<a href="https://vladmccc.github.io/michealJordan/"><img src="michealJordan.png" style="width:100%"></a>
+		<br>
+	  <br>
+		<div class="text">Tribute Page</div>
+	  </div>
+	  <br>
+	  <br>
+	  <br>
+	<a class="prev" onclick="plusSlides(-1)">❮</a>
+	
+	<a class="next" onclick="plusSlides(1)">❯</a>
+	
+	</div>
+	<br>
+	<br>
+
+	<div style="text-align:center">
+	  <span class="dot" onclick="currentSlide(1)"></span> 
+	  <span class="dot" onclick="currentSlide(2)"></span> 
+	  <span class="dot" onclick="currentSlide(3)"></span> 
+	  <span class="dot" onclick="currentSlide(4)"></span> 
+	  <span class="dot" onclick="currentSlide(5)"></span> 
+	  <span class="dot" onclick="currentSlide(6)"></span> 
+	</div>
+	
+	<script>
+	let slideIndex = 1;
+	showSlides(slideIndex);
+	
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+	
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+	
+	function showSlides(n) {
+	  let i;
+	  let slides = document.getElementsByClassName("mySlides");
+	  let dots = document.getElementsByClassName("dot");
+	  if (n > slides.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+	  }
+	  for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	}
+	</script>
+	     </div>
+        </div>
+    </div>
+</div>
+								<br>
+								<br>
+								<br>
+								<br>
+							</font>
+						</td>
+
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<!--Projects(end)-->
+
+	<!--Achievement(start)-->
+	<table id="achievements" border="0" width="100%"
+		cellpadding="0" cellspacing="0" >
+		<tr>
+			<td>
+				<table border="0" cellpadding="15"
+					cellspacing="0" width="80%" align="center">
+					<tr>
+						<td height="180" align="center" valign="middle">
+							<font face="Verdana" size="8" color="#4c9fb4">
+								Achievements
+								<hr color="#4c9fb4" width="100">
+							</font>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<font face="Verdana" size="4" color="FFFFFF">
+								<ul>
+										<b>Field IT Specialist</b>
+										<ul>
+											<li>
+												May, 2022 - Present.
+											</li>
+											<li>
+												Employed at a local MSP as a
+                                                Field IT Specialist.
+											</li>
+										</ul>
+									</li>
+
+										<br>
+										<br>
+										<br>
+										<b>Computer Refurbishing, Repair & Sales</b>
+										<ul>
+											<li>
+												September, 2015 - December 2019.
+											</li>
+											<li>
+												Conducted computer repair and sales
+                                                for the Boys and Girls Club of Mercer
+                                                County as well as for the general public.
+											</li>
+										</ul>
+									</li>
+
+										<br>
+										<br>
+										<br>
+										<b>High School Graduate</b>
+										<ul>
+											<li>
+												June, 2021.
+											</li>
+											<li>
+												Graduated from Lawrence High School 
+                                                as an honors student.
+											</li>
+											<br>
+											<br>
+											<br>
+											<br>
+											<br>
+										</ul>
+									</li>
+
+								</ul>
+
+							</font>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<!--Achievement(end)-->
+
+	<!--Footer1(start)-->
+	<table id="footer" border="0" width="100%"
+		cellpadding="0" cellspacing="0" bgcolor="#b3b3b3" color="FFFFFF">
+		<tr>
+			<td>
+				<table border="0" cellpadding="15"
+					cellspacing="0" width="90%" align="center" size="5">
+					<tr>
+						<td width="13%" valign="top">
+							<font face="Verdana" size="4" color="#3b7c8c">
+							<a href="https://vladzubialevich.com" style="text-decoration:none" color="FFFFFF">
+
+								<b>LinkedIn</b>
+							</a>
+						</font>
+						</td>
+
+						<td>
+							
+						</td>
+
+						<td width="13%" valign="top">
+							<font face="Verdana" size="4" color="#3b7c8c">
+
+							<a href="https://vladzubialevich.com" style="text-decoration:none" color="FFFFFF">
+								<b>GitHub</b>
+							</a>
+						</font>
+						</td>
+
+						<td>
+							
+						</td>
+
+						<td width="13%" valign="top">
+							<font face="Verdana" size="4" color="#3b7c8c">
+
+							<a href="https://vladzubialevich.com" style="text-decoration:none" color="FFFFFF">
+								<b>Twitter</b>
+							</a>
+						</font>
+						</td>
+
+						<td>
+							
+						</td>
+
+						<td width="13%" valign="top">
+							<font face="Verdana" size="4" color="#3b7c8c">
+
+							<a href="https://vladzubialevich.com" style="text-decoration:none" color="FFFFFF">
+								<b>Instagram</b>
+							</a>
+						</font>
+						</td>
+
+						<td>
+							
+						</td>
+
+						<td width="13%" valign="top">
+							<font face="Verdana" size="4" color="#3b7c8c">
+
+							<a href="https://vladzubialevich.com" style="text-decoration:none" color="FFFFFF">
+								<b>Email</b>
+							</a>
+						</font>
+						</td>
+
+						<td>
+							
+						</td>
+
+						<td width="13%" valign="top">
+							<font face="Verdana" size="4" color="#3b7c8c">
+
+							<a href="https://vladzubialevich.com" style="text-decoration:none" color="FFFFFF">
+								<b>Website</b>
+							</a>
+						</font>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<!--Footer1(end)-->
+
+
+	<!--Footer2(start)-->
+	<table id="footer" border="0" width="100%"
+		cellpadding="0" cellspacing="0" >
+		<tr>
+			<td>
+				<table border="0" cellpadding="15"
+					cellspacing="0" width="90%" align="center">
+					<tr>
+						<td width="80%" valign="top">
+							<font face="Verdana"
+								color="#FFFFFF" size="6">
+                                <br>
+								©Copyright 2022 by Vlad Zubialevich.
+								All rights reserved.
+							</font>
+						</td>
+
+						<td width="10%">
+							<font face="arial" color="FFFFFF" size="6">
+								<a href="#header" style="text-decoration:none">
+									<font face="Verdana" color="#b3b3b3" size="6">
+										<b>TOP</b>
+									</font>
+								</a>
+							</font>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<!--Footer2(end)-->
+
+
+</html>		
